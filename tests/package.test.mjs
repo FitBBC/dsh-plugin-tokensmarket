@@ -12,10 +12,13 @@ const patch = await readFile(
 
 test('declares a DeepSeek Harness Profile Bundle', () => {
   assert.equal(packageJson.dsh.bundle.patch, './cordis.patch.yml')
-  assert.equal(
-    packageJson.dependencies['@deepseek-ai/dsh-llm-pi-ai'],
-    '0.1.5-rc.1',
-  )
+})
+
+test('configures the existing pi-ai row without mounting a second adapter', () => {
+  assert.match(patch, /^- id: llm-pi-ai$/m)
+  assert.doesNotMatch(patch, /^\s*- insert:/m)
+  assert.doesNotMatch(patch, /name:\s*['"]?@deepseek-ai\/dsh-llm-pi-ai/)
+  assert.equal(packageJson.dependencies?.['@deepseek-ai/dsh-llm-pi-ai'], undefined)
 })
 
 test('registers the Token Market route without embedding credentials', () => {

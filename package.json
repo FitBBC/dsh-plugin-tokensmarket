@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-tokensmarket",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Token Market provider bundle for DeepSeek Harness",
   "type": "module",
   "main": "src/index.js",
@@ -47,8 +47,5 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
-  },
-  "dependencies": {
-    "@deepseek-ai/dsh-llm-pi-ai": "0.1.5-rc.1"
   }
 }
