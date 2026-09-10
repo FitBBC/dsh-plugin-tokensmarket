@@ -1,0 +1,54 @@
+{
+  "name": "dsh-plugin-tokensmarket",
+  "version": "0.1.0",
+  "description": "Token Market provider bundle for DeepSeek Harness",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:models": "node scripts/check-models.mjs",
+    "prepack": "npm test"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "tokensmarket",
+    "llm-provider",
+    "openai-compatible"
+  ],
+  "author": "Token Market",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FitBBC/dsh-plugin-tokensmarket.git"
+  },
+  "homepage": "https://github.com/FitBBC/dsh-plugin-tokensmarket#readme",
+  "bugs": {
+    "url": "https://github.com/FitBBC/dsh-plugin-tokensmarket/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-llm-pi-ai": "0.1.5-rc.1"
+  }
+}
