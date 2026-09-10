@@ -14,7 +14,7 @@ OpenAI 兼容模型供应商。
 - 通过 `GET /v1/models` 发现当前可用模型。
 - API Key 不写入仓库或 Bundle 配置。
 
-首版内置 DeepSeek V4 Pro、GPT-5.6 Sol 和 GLM-5.2。内置目录保持精简，
+首版内置 DeepSeek V4 Pro、Kimi K3 和 GLM-5.3。内置目录保持精简，
 便于逐个验证并及时维护。
 
 ## 环境要求

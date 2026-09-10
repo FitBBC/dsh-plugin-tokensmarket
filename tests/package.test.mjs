@@ -26,8 +26,8 @@ test('registers the Token Market route without embedding credentials', () => {
   assert.doesNotMatch(patch, /Authorization:\s*Bearer/i)
 })
 
-test('ships a non-empty verified starter catalog', () => {
-  for (const id of ['deepseek-v4-pro', 'gpt-5.6-sol', 'glm-5.2']) {
+test('ships a non-empty curated starter catalog', () => {
+  for (const id of ['deepseek-v4-pro', 'kimi-k3', 'glm-5.3']) {
     assert.match(patch, new RegExp(`- id: ${id.replace('.', '\\.')}`))
   }
 })

@@ -14,7 +14,7 @@ OpenAI-compatible model provider.
 - Live model discovery through `GET /v1/models`.
 - Credentials stay outside the repository and configuration file.
 
-The starter catalog includes DeepSeek V4 Pro, GPT-5.6 Sol, and GLM-5.2. The
+The starter catalog includes DeepSeek V4 Pro, Kimi K3, and GLM-5.3. The
 catalog is intentionally small so every bundled model can be tested and kept
 current.
 

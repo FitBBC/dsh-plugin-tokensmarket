@@ -1,5 +1,5 @@
 const baseURL = 'https://api.tokensmarket.ai/v1'
-const requiredModels = ['deepseek-v4-pro', 'gpt-5.6-sol', 'glm-5.2']
+const requiredModels = ['deepseek-v4-pro', 'kimi-k3', 'glm-5.3']
 const apiKey = process.env.TOKENSMARKET_API_KEY
 
 if (!apiKey) {
