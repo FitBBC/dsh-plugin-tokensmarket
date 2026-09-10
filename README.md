@@ -17,6 +17,8 @@ OpenAI-compatible model provider.
 The starter catalog includes DeepSeek V4 Pro, Kimi K3, and GLM-5.3. The
 catalog is intentionally small so every bundled model can be tested and kept
 current.
+These models were confirmed available through Token Market on September 10,
+2026.
 
 ## Requirements
 
@@ -31,6 +33,12 @@ Install the bundle into a Harness profile:
 
 ```bash
 dsh plugin --profile web add github:FitBBC/dsh-plugin-tokensmarket
+```
+
+Verify that the bundle is present in the composed profile:
+
+```bash
+dsh --profile web --dump-config
 ```
 
 Set the credential in your environment or a Harness-supported `.env` file:

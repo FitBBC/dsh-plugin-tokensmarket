@@ -16,6 +16,7 @@ OpenAI 兼容模型供应商。
 
 首版内置 DeepSeek V4 Pro、Kimi K3 和 GLM-5.3。内置目录保持精简，
 便于逐个验证并及时维护。
+以上模型已于 2026 年 9 月 10 日确认可通过 Token Market 使用。
 
 ## 环境要求
 
@@ -29,6 +30,12 @@ OpenAI 兼容模型供应商。
 
 ```bash
 dsh plugin --profile web add github:FitBBC/dsh-plugin-tokensmarket
+```
+
+确认 Bundle 已进入组合后的 Profile：
+
+```bash
+dsh --profile web --dump-config
 ```
 
 在环境变量或 Harness 支持的 `.env` 文件中配置凭据：
