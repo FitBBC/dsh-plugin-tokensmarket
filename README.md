@@ -32,7 +32,7 @@ These models were confirmed available through Token Market on September 10,
 Install the bundle into a Harness profile:
 
 ```bash
-dsh plugin --profile web add github:FitBBC/dsh-plugin-tokensmarket
+dsh plugin --profile web add github:FitBBC/dsh-plugin-tokenmarket
 ```
 
 Verify that the bundle is present in the composed profile:
@@ -44,7 +44,7 @@ dsh --profile web --dump-config
 Set the credential in your environment or a Harness-supported `.env` file:
 
 ```bash
-TOKENSMARKET_API_KEY=your_api_key
+TOKENMARKET_API_KEY=your_api_key
 ```
 
 Restart the profile after adding the bundle:
@@ -53,12 +53,12 @@ Restart the profile after adding the bundle:
 dsh --profile web
 ```
 
-Token Market will appear as the `tokensmarket` provider.
+Token Market will appear as the `tokenmarket` provider.
 
 ## Verify the live catalog
 
 ```bash
-TOKENSMARKET_API_KEY=your_api_key npm run check:models
+TOKENMARKET_API_KEY=your_api_key npm run check:models
 ```
 
 This command calls the authenticated Token Market model endpoint and fails if
@@ -68,11 +68,11 @@ one of the bundled starter models is no longer available.
 
 This package is a configuration-only Harness Profile Bundle. Its
 `cordis.patch.yml` mounts the official `@deepseek-ai/dsh-llm-pi-ai` adapter and
-registers a `tokensmarket` route with:
+registers a `tokenmarket` route with:
 
 - API base URL: `https://api.tokensmarket.ai/v1`
 - Protocol: `openai-completions`
-- Credential reference: `TOKENSMARKET_API_KEY`
+- Credential reference: `TOKENMARKET_API_KEY`
 
 See the [Token Market documentation](https://www.tokensmarket.ai/docs) for API
 details and the [model catalog](https://www.tokensmarket.ai/models) for current

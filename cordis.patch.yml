@@ -4,9 +4,9 @@
 - id: llm-pi-ai
   config:
     providers:
-      tokensmarket:
+      tokenmarket:
         displayName: Token Market
-        apiKeyEnv: TOKENSMARKET_API_KEY
+        apiKeyEnv: TOKENMARKET_API_KEY
         api: openai-completions
         baseURL: https://api.tokensmarket.ai/v1
         compat:

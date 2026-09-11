@@ -29,7 +29,7 @@ OpenAI 兼容模型供应商。
 将 Bundle 安装到 Harness Profile：
 
 ```bash
-dsh plugin --profile web add github:FitBBC/dsh-plugin-tokensmarket
+dsh plugin --profile web add github:FitBBC/dsh-plugin-tokenmarket
 ```
 
 确认 Bundle 已进入组合后的 Profile：
@@ -41,7 +41,7 @@ dsh --profile web --dump-config
 在环境变量或 Harness 支持的 `.env` 文件中配置凭据：
 
 ```bash
-TOKENSMARKET_API_KEY=your_api_key
+TOKENMARKET_API_KEY=your_api_key
 ```
 
 添加 Bundle 后重启 Profile：
@@ -50,12 +50,12 @@ TOKENSMARKET_API_KEY=your_api_key
 dsh --profile web
 ```
 
-Token Market 会以 `tokensmarket` Provider 出现在模型选择界面中。
+Token Market 会以 `tokenmarket` Provider 出现在模型选择界面中。
 
 ## 校验在线模型目录
 
 ```bash
-TOKENSMARKET_API_KEY=your_api_key npm run check:models
+TOKENMARKET_API_KEY=your_api_key npm run check:models
 ```
 
 该命令会访问需要鉴权的 Token Market 模型接口；如果任一内置模型已经
@@ -68,7 +68,7 @@ TOKENSMARKET_API_KEY=your_api_key npm run check:models
 
 - API 地址：`https://api.tokensmarket.ai/v1`
 - 协议：`openai-completions`
-- 凭据变量：`TOKENSMARKET_API_KEY`
+- 凭据变量：`TOKENMARKET_API_KEY`
 
 API 说明请查看 [Token Market 文档](https://www.tokensmarket.ai/docs)，当前
 模型和价格请查看[模型目录](https://www.tokensmarket.ai/models)。

@@ -1,6 +1,6 @@
 {
-  "name": "dsh-plugin-tokensmarket",
-  "version": "0.1.1",
+  "name": "dsh-plugin-tokenmarket",
+  "version": "0.1.2",
   "description": "Token Market provider bundle for DeepSeek Harness",
   "type": "module",
   "main": "src/index.js",
@@ -23,7 +23,7 @@
   "keywords": [
     "dsh-plugin",
     "deepseek-harness",
-    "tokensmarket",
+    "tokenmarket",
     "llm-provider",
     "openai-compatible"
   ],
@@ -31,11 +31,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FitBBC/dsh-plugin-tokensmarket.git"
+    "url": "git+https://github.com/FitBBC/dsh-plugin-tokenmarket.git"
   },
-  "homepage": "https://github.com/FitBBC/dsh-plugin-tokensmarket#readme",
+  "homepage": "https://github.com/FitBBC/dsh-plugin-tokenmarket#readme",
   "bugs": {
-    "url": "https://github.com/FitBBC/dsh-plugin-tokensmarket/issues"
+    "url": "https://github.com/FitBBC/dsh-plugin-tokenmarket/issues"
   },
   "publishConfig": {
     "access": "public"

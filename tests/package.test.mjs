@@ -22,8 +22,8 @@ test('configures the existing pi-ai row without mounting a second adapter', () =
 })
 
 test('registers the Token Market route without embedding credentials', () => {
-  assert.match(patch, /providers:\s+tokensmarket:/s)
-  assert.match(patch, /apiKeyEnv: TOKENSMARKET_API_KEY/)
+  assert.match(patch, /providers:\s+tokenmarket:/s)
+  assert.match(patch, /apiKeyEnv: TOKENMARKET_API_KEY/)
   assert.match(patch, /api: openai-completions/)
   assert.match(patch, /baseURL: https:\/\/api\.tokensmarket\.ai\/v1/)
   assert.doesNotMatch(patch, /Authorization:\s*Bearer/i)

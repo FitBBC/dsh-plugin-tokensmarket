@@ -1,9 +1,9 @@
 const baseURL = 'https://api.tokensmarket.ai/v1'
 const requiredModels = ['deepseek-v4-pro', 'kimi-k3', 'glm-5.3']
-const apiKey = process.env.TOKENSMARKET_API_KEY
+const apiKey = process.env.TOKENMARKET_API_KEY
 
 if (!apiKey) {
-  console.error('TOKENSMARKET_API_KEY is required to check the live model catalog.')
+  console.error('TOKENMARKET_API_KEY is required to check the live model catalog.')
   process.exit(2)
 }
 
